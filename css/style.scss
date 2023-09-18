@@ -244,10 +244,15 @@ header {
     z-index: 0;
 
     .background-lines {
+        display: none;
         position: absolute;
         bottom: 0;
         left: 0;
         z-index: -1;
+
+        @media (min-width: 992px) {
+            display: block;
+        }
     }
 
     .container {
