@@ -421,3 +421,84 @@ header {
         }
     }
 }
+
+footer {
+    background-color: #0E1021;
+
+    .container {
+        display: grid;
+        grid-template-columns: auto, 1fr;
+        grid-template-areas:    "content menu"
+                                "copy copy";
+        column-gap: 60px;   
+        padding-top: 100px;                   
+
+        .content {
+            grid-area: content;
+            p {
+                color: #B6B6BC;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        }
+
+        .menu {
+            grid-area: menu;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            column-gap: 100px;
+            padding-bottom: 90px;
+
+            nav {
+                list-style-type: none;
+                
+                h5 {
+                    color: #B6B6BC;
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding-bottom: 20px;
+                }
+
+                li a {
+                    text-decoration: none;
+                    color: #B6B6BC;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 2.5;
+                }
+            }
+        }
+
+        .copyright-social {
+            grid-area: copy;
+            border-top: 1px solid #3E404D;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            padding-bottom: 10px;
+            .copyright {
+                
+                p {
+                    color: #B6B6BC;
+                }
+            }
+    
+            .socialmedia {
+    
+                a {
+                    color: #FFFFFF;
+                    font-size: 1rem;
+                    margin-left: 15px;
+
+                    &:hover {
+                        color: #7c7c7c;
+                    }
+                }
+            }
+        }
+    }
+}
