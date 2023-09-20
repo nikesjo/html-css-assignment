@@ -298,6 +298,28 @@ header .container .menu .btn-login {
   }
 }
 
+.logos .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .logos .container {
+    justify-content: space-around;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+.logos .container .logo {
+  padding: 10px;
+}
+.logos .container .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
 .project-and-case .container .section-title {
   text-align: center;
 }

@@ -320,6 +320,30 @@ header {
     }
 }
 
+.logos {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @media (min-width: 768px) {
+            justify-content: space-around;
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
+        .logo {
+            padding: 10px;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
 .project-and-case {
     .container {
 
