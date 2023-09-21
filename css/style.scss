@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,900&display=swap');
 
 html, body {
@@ -424,6 +425,113 @@ header {
     }
 }
 
+.about-company {
+
+    .container {
+        display: flex;
+        padding-bottom: 120px;
+        padding-top: 120px;
+        position: relative;
+        
+        .picture {
+            width: 100%;
+            height: auto;
+            padding-left: 50px;
+            padding-right: 150px;
+        }
+
+        .lines {
+            display: block;
+            position: absolute;
+            top: 155px;
+            left: 30px;
+        }
+    
+        .text-box {
+            display: inline-block;
+            background-color: #BEEBFF;
+            position: absolute;
+            bottom: 160px;
+
+            padding: 2.5rem 3.75rem 2.5rem 1.1rem;
+            box-shadow:(0px 0px 40px 4px #2c2c2c2d);
+
+            h5 {
+                color: #191919;
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            .small-h {
+                font-size: 16px;
+                color: #F94D1C;
+            }
+    
+            p {
+                color: #191919;
+                font-family: 'Inter Tight', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                
+            }
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            padding-right: 30px;
+
+            .section-title {
+                padding-top: 0px;
+                padding-bottom: 30px;
+            }
+
+            .text {
+                p {
+                    color: #4C4C4C;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    margin-bottom: 30px;
+                    line-height: 1.8;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+                margin-top: 80px;
+                
+                .btn-black {
+                    margin-right: 40px;
+                    border-radius: 50px;
+                }
+
+                .btn-transparent {
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    align-items: center;
+                    padding: 10px; 
+
+                    i {
+                        margin-left: 10px;
+                        margin-top: 8px;
+                    }
+                }
+
+                p {
+                    align-self: center;
+                    margin: 0;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
 .project-and-case {
     .container {
 
@@ -531,14 +639,27 @@ footer {
 
     .container {
         display: grid;
-        grid-template-columns: auto, 1fr;
-        grid-template-areas:    "content menu"
-                                "copy copy";
+        grid-template-columns: 1fr;
+        grid-template-areas:    "content"
+                                "menu"
+                                "copy";
         column-gap: 60px;   
         padding-top: 100px;                   
 
+        @media (min-width: 992px) {
+            grid-template-columns: auto, 1fr;
+            grid-template-areas:    "content menu"
+                                    "copy copy";
+            column-gap: 60px;   
+            padding-top: 100px;       
+        }
+
         .content {
             grid-area: content;
+
+            img {
+                margin-bottom: 20px;
+            }
             p {
                 color: #B6B6BC;
                 font-family: 'Inter', sans-serif;
@@ -551,9 +672,15 @@ footer {
         .menu {
             grid-area: menu;
             display: grid;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
             column-gap: 100px;
             padding-bottom: 90px;
+
+            @media (min-width: 768px) {
+                grid-template-columns: auto auto auto auto;
+                text-align: start;
+            }
 
             nav {
                 list-style-type: none;
