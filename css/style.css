@@ -303,7 +303,7 @@ header .container .menu .btn-login {
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 @media (min-width: 768px) {
   .logos .container {
@@ -318,6 +318,78 @@ header .container .menu .btn-login {
 .logos .container .logo img {
   max-width: 100%;
   height: auto;
+  margin-bottom: 10px;
+}
+
+.features .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .features .container {
+    border: 1.2px solid #cccccc;
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1200px) {
+  .features .container {
+    padding-right: 120px;
+  }
+}
+.features .container .section-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .features .container .section-title {
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .features .container .section-title {
+    padding-bottom: 200px;
+  }
+}
+.features .container .section-title p {
+  font-size: 18px;
+}
+.features .container .section-title a {
+  margin-top: 40px;
+  text-align: center;
+  width: 460px;
+}
+.features .container .information-article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .features .container .information-article {
+    text-align: start;
+    gap: 55px;
+    padding-bottom: 50px;
+  }
+}
+.features .container .information-article article i {
+  font-size: 1.5em;
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+.features .container .information-article article h4 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.features .container .information-article article p {
+  font-size: 16;
+  color: #4c4c4c;
 }
 
 .project-and-case .container .section-title {
