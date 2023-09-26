@@ -353,6 +353,7 @@ header .container .menu .btn-login {
 @media (min-width: 1200px) {
   .features .container .section-title {
     padding-bottom: 200px;
+    text-align: start;
   }
 }
 .features .container .section-title p {
@@ -398,18 +399,40 @@ header .container .menu .btn-login {
   padding-bottom: 120px;
   padding-top: 120px;
   position: relative;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .about-company .container {
+    flex-direction: row;
+  }
 }
 .about-company .container .picture {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  padding-left: 50px;
-  padding-right: 150px;
+}
+@media (min-width: 1200px) {
+  .about-company .container .picture {
+    padding-right: 50px;
+    padding-left: 20px;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1400px) {
+  .about-company .container .picture {
+    padding-right: 150px;
+    padding-left: 50px;
+  }
 }
 .about-company .container .lines {
-  display: block;
+  display: none;
   position: absolute;
   top: 155px;
   left: 30px;
+}
+@media (min-width: 1200px) {
+  .about-company .container .lines {
+    display: block;
+  }
 }
 .about-company .container .text-box {
   display: inline-block;
@@ -438,7 +461,13 @@ header .container .menu .btn-login {
 .about-company .container .content {
   display: flex;
   flex-direction: column;
-  padding-right: 30px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .about-company .container .content {
+    padding-right: 30px;
+    text-align: left;
+  }
 }
 .about-company .container .content .section-title {
   padding-top: 0px;
@@ -477,6 +506,118 @@ header .container .menu .btn-login {
   align-self: center;
   margin: 0;
   font-weight: 600;
+}
+
+.our-services {
+  background-color: #F0EFE9;
+  position: relative;
+  z-index: 0;
+}
+.our-services .background-lines {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+@media (min-width: 992px) {
+  .our-services .background-lines {
+    display: block;
+  }
+}
+.our-services .container .section-title {
+  padding-bottom: 30px;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+@media (min-width: 1200px) {
+  .our-services .container .section-title {
+    text-align: left;
+    padding-right: 600px;
+    margin: 0px;
+  }
+}
+@media (min-width: 1400px) {
+  .our-services .container .section-title {
+    padding-right: 800px;
+  }
+}
+.our-services .container .service-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .our-services .container .service-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .our-services .container .service-cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.our-services .container .service-cards .cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  text-decoration: none;
+  padding: 80px 30px 50px;
+  background-color: #FFFFFF;
+  transition: background-color 0.3s ease;
+  position: relative;
+  transition: boarder 0.3s ease;
+}
+.our-services .container .service-cards .cards h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: #191919;
+  padding-bottom: 16px;
+}
+.our-services .container .service-cards .cards p {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #4C4C4C;
+  padding-bottom: 20px;
+}
+.our-services .container .service-cards .cards::before {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 30px;
+  width: 13%;
+  height: 2px;
+  background-color: #191919;
+}
+.our-services .container .service-cards .cards:hover {
+  background-color: #F9D783;
+}
+.our-services .container .service-cards .cards:hover .btn-black {
+  background-color: #FFFFFF;
+}
+.our-services .container .service-cards .cards:hover .btn-black i {
+  color: #191919;
+}
+.our-services .container .service-cards .cards .btn-black {
+  display: grid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  justify-self: end;
+  justify-content: center;
+  align-content: center;
+  padding-right: 8px;
+}
+.our-services .container .service-cards .cards .btn-black i {
+  font-size: 1.2em;
+}
+.our-services .container .center-content {
+  padding-top: 50px;
+  padding-bottom: 90px;
 }
 
 .project-and-case .container .section-title {
