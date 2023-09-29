@@ -806,6 +806,7 @@ header .container .menu .btn-login {
 }
 .meet-our-team .container .meet-our-team .section-title p {
   font-size: 18px;
+  font-weight: 500;
 }
 .meet-our-team .container .meet-our-team .section-title h2 {
   font-size: 40px;
@@ -856,6 +857,88 @@ header .container .menu .btn-login {
   margin: 0 10px;
   border-radius: 100%;
   background-color: #191919;
+}
+
+.testimonial {
+  background-color: #F0D082;
+  padding-bottom: 120px;
+}
+.testimonial .container {
+  background-color: #FFFFFF;
+}
+.testimonial .container .section-title {
+  text-align: center;
+}
+.testimonial .container .section-title p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.testimonial .container .reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0 20px;
+}
+@media (min-width: 768px) {
+  .testimonial .container .reviews {
+    padding: 0 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonial .container .reviews {
+    flex-direction: row;
+    align-items: start;
+  }
+}
+.testimonial .container .reviews .review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 1200px) {
+  .testimonial .container .reviews .review {
+    align-items: start;
+  }
+}
+.testimonial .container .reviews .review .stars {
+  color: #F94D1C;
+}
+.testimonial .container .reviews .review .client-review p {
+  font-size: 18px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .testimonial .container .reviews .review .client-review p {
+    text-align: left;
+  }
+}
+.testimonial .container .reviews .review .client {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.testimonial .container .reviews .review .client img {
+  max-width: 100%;
+}
+.testimonial .container .reviews .review .client .client-name h4 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.testimonial .container .reviews .review .client .client-name p {
+  color: #F94D1C;
+  margin-bottom: 0;
+}
+.testimonial .container .center-content {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .testimonial .container .center-content {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
 }
 
 .newsletter {
