@@ -773,6 +773,91 @@ header .container .menu .btn-login {
   margin-bottom: 90px;
 }
 
+.meet-our-team {
+  background-color: #F0D082;
+}
+.meet-our-team .container {
+  padding-bottom: 100px;
+}
+.meet-our-team .container .meet-our-team {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .meet-our-team {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.meet-our-team .container .meet-our-team .section-title {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .meet-our-team .container .meet-our-team .section-title {
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .meet-our-team .section-title {
+    text-align: left;
+    padding-bottom: 90px;
+  }
+}
+.meet-our-team .container .meet-our-team .section-title p {
+  font-size: 18px;
+}
+.meet-our-team .container .meet-our-team .section-title h2 {
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  .meet-our-team .container .meet-our-team .section-title h2 {
+    font-size: 45px;
+  }
+}
+.meet-our-team .container .meet-our-team a {
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .meet-our-team .container .meet-our-team a {
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
+}
+.meet-our-team .container #team-pictures {
+  position: relative;
+}
+.meet-our-team .container #team-pictures .carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+.meet-our-team .container #team-pictures .carousel-item h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  padding-top: 20px;
+}
+@media (min-width: 768px) {
+  .meet-our-team .container #team-pictures .carousel-item h3 {
+    padding-top: 35px;
+  }
+}
+.meet-our-team .container #team-pictures .carousel-item p {
+  color: #4c4c4c;
+}
+.meet-our-team .container #team-pictures .carousel-indicators {
+  position: absolute;
+  bottom: -60px;
+}
+.meet-our-team .container #team-pictures .carousel-indicators button {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px;
+  border-radius: 100%;
+  background-color: #191919;
+}
+
 .newsletter {
   background-color: #F0EFE9;
   position: relative;
