@@ -446,7 +446,6 @@ header {
             @media (min-width: 1200px) {
                 padding-right: 50px;
                 padding-left: 20px;
-                max-width: 100%;
             }
 
             @media (min-width: 1400px) {
@@ -675,6 +674,119 @@ header {
         .center-content {
             padding-top: 50px;
             padding-bottom: 90px;
+        }
+    }
+}
+
+.why-choose-us {
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 0;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .text-column {
+            display: flex;
+            column-gap: 20px;
+
+            @media (min-width: 1200px) {
+                flex-direction: column;
+            }
+
+            .section-title {
+                text-align: center;
+
+                @media (min-width: 992px) {
+                    text-align: left;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                margin-bottom: 0;
+                padding: 50px 0;
+
+                @media (min-width: 1200px) {
+                    padding: 0;
+                }
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 45px;                  
+                    
+                    i {
+                        display: flex;
+                        justify-content: center;
+                        border: 1px solid #E5E5E5;
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;                       
+                        padding: 10px;
+                        font-size: 1.5em;
+                    }
+
+                    .text {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 20px;
+
+                        h3 {
+                            font-family: 'DM Sans', sans-serif;
+                            font-weight: 700;
+                            font-size: 22px;
+                            margin: 0;
+                        }
+    
+                        p {
+                            font-size: 16;
+                            color: #4c4c4c;
+                            margin: 0;
+                        }
+                    }
+
+                    &.last {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .wcu-right {
+            display: flex;
+            align-items: center;
+
+            
+            img {
+                max-width: 100%;
+                height: auto;              
+                
+                @media (min-width: 1200px) {
+                    padding-top: 60px;
+                    margin-left: 5em;
+                }
+
+                @media (min-width: 1400px) {
+                    margin-left: 15em;
+                }
+            }
+
+            .wcu-box {                
+                position: absolute;
+                z-index: -1;
+                // 
+                // left: 15%;
+                // bottom: 6%;
+                // 
+                bottom: 0;
+                right: 0;
+                background-color: #F0EFE9;
+                width: 1050px;
+                height: 425px;
+            }
         }
     }
 }
