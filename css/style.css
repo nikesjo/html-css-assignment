@@ -89,6 +89,8 @@ html, body {
 .section-title p {
   color: #F94D1C;
   margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
 }
 .section-title h2 {
   color: #191919;
@@ -804,10 +806,6 @@ header .container .menu .btn-login {
     padding-bottom: 90px;
   }
 }
-.meet-our-team .container .meet-our-team .section-title p {
-  font-size: 18px;
-  font-weight: 500;
-}
 .meet-our-team .container .meet-our-team .section-title h2 {
   font-size: 40px;
 }
@@ -832,6 +830,11 @@ header .container .menu .btn-login {
 .meet-our-team .container #team-pictures .carousel-item img {
   max-width: 100%;
   height: auto;
+}
+@media (min-width: 768px) {
+  .meet-our-team .container #team-pictures .carousel-item img {
+    max-width: 25%;
+  }
 }
 .meet-our-team .container #team-pictures .carousel-item h3 {
   font-family: "DM Sans", sans-serif;
@@ -861,17 +864,13 @@ header .container .menu .btn-login {
 
 .testimonial {
   background-color: #F0D082;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 .testimonial .container {
   background-color: #FFFFFF;
 }
 .testimonial .container .section-title {
   text-align: center;
-}
-.testimonial .container .section-title p {
-  font-size: 18px;
-  font-weight: 500;
 }
 .testimonial .container .reviews {
   display: flex;
@@ -907,6 +906,7 @@ header .container .menu .btn-login {
 .testimonial .container .reviews .review .client-review p {
   font-size: 18px;
   text-align: center;
+  line-height: 2;
 }
 @media (min-width: 1200px) {
   .testimonial .container .reviews .review .client-review p {
@@ -936,9 +936,106 @@ header .container .menu .btn-login {
 }
 @media (min-width: 768px) {
   .testimonial .container .center-content {
-    padding-top: 100px;
-    padding-bottom: 120px;
+    padding-top: 80px;
+    padding-bottom: 110px;
   }
+}
+
+.article-and-news .container .content {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+@media (min-width: 992px) {
+  .article-and-news .container .content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.article-and-news .container .content .section-title {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .article-and-news .container .content .section-title {
+    text-align: left;
+    padding-bottom: 0;
+  }
+}
+.article-and-news .container .content a {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .article-and-news .container .content a {
+    margin-bottom: 0;
+    margin-top: 140px;
+  }
+}
+.article-and-news .container .articles-and-news {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (min-width: 992px) {
+  .article-and-news .container .articles-and-news {
+    flex-direction: row;
+  }
+}
+.article-and-news .container .articles-and-news .article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+  color: #191919;
+  gap: 0.5rem;
+}
+@media (min-width: 1200px) {
+  .article-and-news .container .articles-and-news .article {
+    text-align: start;
+  }
+}
+.article-and-news .container .articles-and-news .article .date-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F9D783;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 3.5rem;
+  height: 4rem;
+  text-align: center;
+}
+.article-and-news .container .articles-and-news .article .date-box h6 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0;
+}
+.article-and-news .container .articles-and-news .article .date-box p {
+  color: #4c4c4c;
+  margin: 0;
+}
+.article-and-news .container .articles-and-news .article img {
+  max-width: 100%;
+}
+.article-and-news .container .articles-and-news .article p {
+  color: #4c4c4c;
+}
+.article-and-news .container .articles-and-news .article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.article-and-news .container .center-content {
+  gap: 0.8rem;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.article-and-news .container .center-content a {
+  text-decoration: none;
+  color: #191919;
 }
 
 .newsletter {
