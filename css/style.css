@@ -1325,3 +1325,14 @@ footer .container .copyright-social .socialmedia a:hover {
   resize: none;
   height: 150px;
 }
+
+.map img {
+  margin-top: 50px;
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 1200px) {
+  .map img {
+    margin-top: 80px;
+  }
+}
