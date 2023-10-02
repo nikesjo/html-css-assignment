@@ -51,6 +51,7 @@
             </div>
         </header>
         <main>
+            <!-- lets connect section -->
             <section class="lets-connect">
                 <img class="background-lines" src="images/lines-contact.svg" alt="">
                 <div class="container">
@@ -91,6 +92,28 @@
                             <p>support@crito.com</p>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- message form section -->
+            <section class="message-form">
+                <div class="container">
+                    <h2>Leave us a message for any information.</h2>
+                    <form id="messageForm" method="post">
+                        <div class="mb-3 mt-4">
+                            <input class="form-input" type="text" id="name" name="name" title="Name" placeholder="Name*" tabindex="1">
+                        </div>
+                        <div class="mb-3">
+                            <input class="form-input" type="email" id="email" name="email" title="Email" placeholder="Email*" tabindex="2">
+                        </div>
+                        <div class="mb-5">
+                            <textarea class="form-input" id="message" name="message" title="Message" placeholder="Your Message*" tabindex="3"></textarea>
+                        </div>
+
+                        <div class="d-grid">
+                            <button class="btn-yellow" type="submit">Send Message <i class="fa-regular fa-arrow-up-right"></i></button>
+                        </div>
+                    </form>
                 </div>
             </section>
 

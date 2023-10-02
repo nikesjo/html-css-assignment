@@ -1407,3 +1407,61 @@ footer {
         }
     }
 }
+
+.message-form {
+    .container {
+        background-color: #F0EFE9;
+        padding: 60px 30px;
+
+        @media (min-width: 768px) {
+            padding: 70px 60px;
+        }
+
+        @media (min-width: 992px) {
+            padding: 80px 100px;
+        }
+
+        @media (min-width: 1200px) {
+            padding: 120px 170px 100px;
+        }
+
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            text-align: center;
+
+            @media (min-width: 768px) {
+                font-size: 45px;
+            }
+
+            @media (min-width: 992px) {
+                margin: 0 150px;
+            }
+
+            @media (min-width: 1200px) {
+                margin: 0 180px;
+            }
+
+            @media (min-width: 1400px) {
+                margin: 0 280px;
+            }
+        }
+
+        form {
+            .form-input {
+                display: block;
+                width: 100%;
+                padding: 10px 25px;
+                color: #7F7F7F;
+                border: 1px solid #DAD9D3;
+                border-radius: 25px;
+            }
+
+            textarea {
+                resize: none;
+                height: 150px;
+            }
+        }
+    }
+}
