@@ -25,7 +25,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 50px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -48,7 +48,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 50px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -71,7 +71,7 @@ html, body {
     font-weight: 600;
     font-size: 16px;
     border-radius: 50px;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out;
 
     i {
         margin-left: 8px;
@@ -137,12 +137,39 @@ header {
 
         .btn-menu-bars {
             grid-area: bars;
+            position: relative;
+            display: inline-block;
             border: none;
             font-size: 25px;
             background-color: transparent;
+            transition: font-size 0.2s ease-in-out;
 
             @media (min-width: 992px) {
                 display: none;
+            }
+
+            .dropdown-links {
+                display: none;
+                flex-direction: column;
+                gap: 5px;
+                position: absolute;
+                z-index: 1;
+                right: -25px;
+                background-color: transparent;
+                font-size: 20px;
+
+                a {
+                    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.24);
+                    border-radius: 10px;
+                }
+            }
+
+            &:hover {
+                font-size: 30px;
+
+                .dropdown-links {
+                    display: flex;
+                }
             }
         }
                                 
@@ -331,7 +358,6 @@ header {
 }
 
 .logos {
-
     .container {
         display: flex;
         justify-content: center;
@@ -344,8 +370,10 @@ header {
             padding-top: 70px;
             padding-bottom: 70px;
         }
+
         .logo {
             padding: 10px;
+
             img {
                 max-width: 100%;
                 height: auto;
@@ -362,7 +390,7 @@ header {
         align-items: center;
         border: 1.2px solid#cccccc; 
 
-        @media (min-width: 992px) {
+        @media (min-width: 1200px) {
             flex-direction: row;
             justify-content: space-evenly;
         }
@@ -401,14 +429,14 @@ header {
             padding-bottom: 60px;
             
             @media (min-width: 992px) {
-                grid-template-columns: 1fr;
-                padding: 20px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
             }
 
             @media (min-width: 1200px) {
-                text-align: start;
-                gap: 55px;
                 grid-template-columns: 1fr 1fr;
+                gap: 55px;
+                padding: 0;
+                text-align: start;
             }
 
             article {
@@ -955,6 +983,7 @@ header {
                         padding-top: 35px;
                     }
                 }
+                
                 p {
                     color: #4c4c4c;
                 }
@@ -970,6 +999,12 @@ header {
                 text-decoration: none;
                 color: #191919;
                 font-size: 0.8em;
+                opacity: 25%;
+
+                &.active,
+                &:hover {
+                    opacity: 100%;
+                }
             }
         }
     }
@@ -1156,6 +1191,10 @@ header {
                     font-weight: 700;
                     font-size: 22px;
                 }
+                
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
 
@@ -1168,6 +1207,12 @@ header {
                 text-decoration: none;
                 color: #191919;
                 font-size: 0.8em;
+                opacity: 25%;
+
+                &.active,
+                &:hover {
+                    opacity: 100%;
+                }
             }
         }
     }
@@ -1220,8 +1265,6 @@ header {
         }
 
         form {
-            display: flex;
-
             .form-input {
                 color: #191919;
                 text-decoration: none;
@@ -1235,10 +1278,6 @@ header {
                 &:focus {
                     border: 1px solid #c2c1bca8;
                 }
-            }
-
-            .btn-yellow {
-                display: flex;
             }
         }
     }
@@ -1352,7 +1391,7 @@ footer {
                                 line-height: 2.5;
 
                                 &:hover {
-                                    text-decoration-line: underline;
+                                    text-decoration: underline;
                                 }
                             }
                         }
